@@ -4,19 +4,36 @@
 * {
     margin: 0; /* altera o espaçamento fora */
     padding: 0; /*altera dentro dos limites do conteúdo*/
-    overflow: hidden; /*tira a barra scroll da pagina*/
+    /* overflow: hidden; tira a barra scroll da pagina */
 }
 
 body {
-    height: 100vh;/* preenche a altura da tela*/
+    /* height: 100vh;preenche a altura da tela */
     box-sizing: border-box;/*todos os elementos filhos dentro do body não ultrapassem os limites e 
                             os seus próprios tamanhos definidos,  mesmo ao adicionar bordas e paddings.*/
     background-color: black;/*Muda a cor de fundo da tela */
     color: #f6f6f6; /*cor de fundo das letras */
 }
 
+.cabecalho {
+padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    color: #FD2222;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 .apresentacao {
-    margin: 10% 15%;
+    padding: 5% 15%;
     display: flex; /*Deixa todos os itens alinhados em linha*/
     align-items: center; /* alinhar os elementos, centralizando-os em relação a si mesmo.*/
     justify-content: space-between;/* divide os espaços disponiveis para cada conteudo dentro do elemento */
@@ -42,23 +59,50 @@ body {
 }
 
 .titulo-destaque{
-    color: #22D4FD;/*cor de fundo da letra do Strong */
+    color: #FD2222;/*cor de fundo da letra do Strong */
 }
 
 .apresentacao__links {
-    display: flex;
+    display: flex; /* coloca os quadrados lado a lado */
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: 'Krona One', sans-serif ;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .apresentacao__links__link {
-    background-color: #22D4FD;
-    width: 280px;
+    /* background-color: #FD2222; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 370px;
     padding: 21.5px 0; /*Altera a distancia top e left. altera a altura left right*/
     text-align: center; /*Centraliza o texto*/
-    border-radius: 16px; /*Arredonda o raio da borda*/
+    border-radius: 8px; /*Arredonda o raio da borda*/
     font-size: 24px;
     font-weight: 600; /*muda o peso da fonte de letra*/
     text-decoration: none;/*tira a decoração do texto*/
-    color: #000000;
+    color: #f6f6f6;
     font-family: "Montserrat", sans-serif;
+    border: 2px solid #FD2222; /*Cria borda solida*/
+}
+
+.apresentacao__links__link:hover {
+    background-color: #272727;
+}
+
+.rodape {
+    background-color: #FD2222;
+    color: #000000;
+    padding: 24px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
 }
