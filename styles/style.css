@@ -47,8 +47,7 @@ padding: 2% 0% 0% 15%;
     display: flex; /*Deixa todos os itens alinhados em linha*/
     align-items: center; /* alinhar os elementos, centralizando-os em relação a si mesmo.*/
     justify-content: space-between;/* divide os espaços disponiveis para cada conteudo dentro do elemento */
-    
-   
+    gap: 82px;
 }
 
 .apresentacao__conteudo {
@@ -119,4 +118,11 @@ padding: 2% 0% 0% 15%;
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .apresentacao{
+        flex-direction: column-reverse;
+
+    }
 }
