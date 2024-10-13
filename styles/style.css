@@ -121,8 +121,15 @@ padding: 2% 0% 0% 15%;
 }
 
 @media (max-width: 1200px) {
-    .apresentacao{
-        flex-direction: column-reverse;
+    .cabecalho{
+        padding: 10%;
+    }
 
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
     }
 }
