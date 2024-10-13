@@ -52,7 +52,7 @@ padding: 2% 0% 0% 15%;
 }
 
 .apresentacao__conteudo {
-    width: 615px; /* muda a largura*/
+    width: 50%; /* muda a largura*/
     display: flex;
     flex-direction: column ;/* alinhar os elementos na Vertical */
     gap: 40px; /*da uma distancia entre todos os elementos*/
@@ -86,12 +86,12 @@ padding: 2% 0% 0% 15%;
     font-size: 1.5rem;
 }
 
-.apresentacao__links__link {
+.apresentacao__links__navegacao {
     /* background-color: #FD2222; */
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 370px;
+    width: 50%;
     padding: 21.5px 0; /*Altera a distancia top e left. altera a altura left right*/
     text-align: center; /*Centraliza o texto*/
     border-radius: 8px; /*Arredonda o raio da borda*/
@@ -103,8 +103,12 @@ padding: 2% 0% 0% 15%;
     border: 2px solid var(--cor-secundaria); /*Cria borda solida*/
 }
 
-.apresentacao__links__link:hover {
+.apresentacao__links__navegacao:hover {
     background-color: var(--cor-hover);
+}
+
+.apresentacao__imagem{
+    width: 50%;
 }
 
 .rodape {
