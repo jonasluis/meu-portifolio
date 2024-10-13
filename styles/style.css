@@ -131,5 +131,10 @@ padding: 2% 0% 0% 15%;
 
     .apresentacao {
         flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
     }
 }
